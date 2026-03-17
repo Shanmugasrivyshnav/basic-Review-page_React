@@ -1,3 +1,6 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
 .bg-container {
   background-image: url("https://assets.ccbp.in/frontend/react-js/reviews-bg.png");
   min-height: 100vh;
@@ -52,4 +55,53 @@
 
 .arrow {
   width: 30px;
+}
+.review-card {
+  text-align: center;
+  margin: 0 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-image {
+  width: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+.arrow-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.arrow-button:hover {
+  transform: scale(1.2);
+}
+.arrow {
+  width: 30px;
+  transition: filter 0.3s ease;
+}
+
+.arrow-button:hover .arrow {
+  filter: brightness(1.3);
+}
+.username {
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.username:hover {
+  color: #ffd700;
 }
